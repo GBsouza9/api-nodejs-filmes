@@ -18,5 +18,5 @@ const rosaClaro = "\x1b[38;5;205m";
 const resetCor = "\x1b[0m";
 
 servidor.listen(PORT, () => {
-  console.log(`${rosaClaro}...: API subiu na porta ${PORT} :..${resetCor}`);
+  console.log(`${rosaClaro}...: API subiu na porta ${PORT} :...${resetCor}`);
 });
