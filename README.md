@@ -66,14 +66,39 @@ A API ficará disponível em:
 
 ```
 api-nodejs-filmes/
+├── sql/
+│   ├── dll.sql
+│   └── dml.sql
 ├── src/
-│   ├── routes/
-│   ├── controllers/
-│   ├── database/
-│   └── uploads/
+│   ├── controller/
+│   │   ├── filmeController.js
+│   │   └── usuarioController.js
+│   ├── repository/
+│   │   ├── connection.js
+│   │   ├── filmeRepository.js
+│   │   └── usuarioRepository.js
+│   ├── service/
+│   │   ├── filme/
+│   │   │   ├── alterarCapaFilmeService.js
+│   │   │   ├── consultarFilmePorIdService.js
+│   │   │   ├── consultarFilmeService.js
+│   │   │   └── salvarFilmeService.js
+│   │   └── usuario/
+│   ├── utils/
+│   │   ├── datetime.js
+│   │   └── global.js
+│   ├── validation/
+│   │   ├── filme/
+│   │   │   └── filmeValidation.js
+│   │   └── usuario/
+│   ├── app.js
+│   ├── rotas.js
+│   └── storage/
+│   │   └── capa/
 ├── .env
-├── package.json
-└── server.js
+├── .gitignore
+└── package.json
+
 ```
 
 ---
